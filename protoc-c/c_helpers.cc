@@ -181,7 +181,7 @@ std::string OverrideFullName(const std::string &full_name,
 			    const FileDescriptor *file) {
   const ProtobufCFileOptions opt = file->options().GetExtension(pb_c_file);
   if (!opt.has_c_package())
-    return full_name;
+    return "hrpc." + full_name;
 
   std::string new_name = opt.c_package();
   if (file->package().empty())
