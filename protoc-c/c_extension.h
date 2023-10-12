@@ -99,7 +99,8 @@ class ExtensionGenerator {
   std::string type_traits_;
   std::string dllexport_decl_;
 
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(ExtensionGenerator);
+  ExtensionGenerator(const ExtensionGenerator&) = delete;
+ExtensionGenerator& operator=(const ExtensionGenerator&) = delete;;
 };
 
 }  // namespace c

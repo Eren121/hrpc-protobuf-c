@@ -4,6 +4,8 @@
 #include <google/protobuf/compiler/command_line_interface.h>
 #include <protoc-c/c_generator.h>
 
+#define PACKAGE_STRING "hrpc-protobuf-c 1.4.1"
+
 int main(int argc, char* argv[]) {
   google::protobuf::compiler::c::CGenerator c_generator;
 

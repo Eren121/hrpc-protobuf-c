@@ -105,7 +105,8 @@ class FieldGenerator {
   const FieldDescriptor *descriptor_;
 
  private:
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(FieldGenerator);
+  FieldGenerator(const FieldGenerator&) = delete;
+FieldGenerator& operator=(const FieldGenerator&) = delete;;
 };
 
 // Convenience class which constructs FieldGenerators for a Descriptor.
@@ -122,7 +123,8 @@ class FieldGeneratorMap {
 
   static FieldGenerator* MakeGenerator(const FieldDescriptor* field);
 
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(FieldGeneratorMap);
+  FieldGeneratorMap(const FieldGeneratorMap&) = delete;
+FieldGeneratorMap& operator=(const FieldGeneratorMap&) = delete;;
 };
 
 }  // namespace c

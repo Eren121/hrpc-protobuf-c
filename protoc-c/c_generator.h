@@ -95,7 +95,8 @@ class PROTOC_C_EXPORT CGenerator : public CodeGenerator {
                 std::string* error) const;
 
  private:
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(CGenerator);
+  CGenerator(const CGenerator&) = delete;
+CGenerator& operator=(const CGenerator&) = delete;;
 };
 
 }  // namespace c

@@ -85,7 +85,8 @@ class MessageFieldGenerator : public FieldGenerator {
 
  private:
 
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(MessageFieldGenerator);
+  MessageFieldGenerator(const MessageFieldGenerator&) = delete;
+MessageFieldGenerator& operator=(const MessageFieldGenerator&) = delete;;
 };
 
 

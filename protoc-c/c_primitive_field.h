@@ -85,7 +85,7 @@ class PrimitiveFieldGenerator : public FieldGenerator {
 
  private:
 
-  GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(PrimitiveFieldGenerator);
+  PrimitiveFieldGenerator(const PrimitiveFieldGenerator&) = delete;;
 };
 
 }  // namespace c
