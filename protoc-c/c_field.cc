@@ -135,7 +135,7 @@ void FieldGenerator::GenerateDescriptorInitializerGeneric(io::Printer* printer,
 			       + "__default_value";
   } else if (FieldSyntax(descriptor_) == 3 &&
     descriptor_->type() == FieldDescriptor::TYPE_STRING) {
-    variables["default_value"] = "&protobuf_c_empty_string";
+    variables["default_value"] = "NULL";
   } else {
     variables["default_value"] = "NULL";
   }

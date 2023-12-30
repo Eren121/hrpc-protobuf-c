@@ -135,9 +135,9 @@ void StringFieldGenerator::GenerateStaticInit(io::Printer* printer) const
   } else if (FieldSyntax(descriptor_) == 2) {
     vars["default"] = "NULL";
   } else if (opt.const_strings()) {
-    vars["default"] = "(const char *)protobuf_c_empty_string";
+    vars["default"] = "NULL";
   } else {
-    vars["default"] = "(char *)protobuf_c_empty_string";
+    vars["default"] = "NULL";
   }
   switch (descriptor_->label()) {
     case FieldDescriptor::LABEL_REQUIRED:
