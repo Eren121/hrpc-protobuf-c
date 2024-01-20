@@ -907,7 +907,7 @@ protobuf_c_message_get_packed_size(const ProtobufCMessage *message);
  * \param message
  *      The message object to serialise.
  * \param[out] out
- *      Buffer to store the bytes of the serialised message. This buffer must
+ *      Span to store the bytes of the serialised message. This buffer must
  *      have enough space to store the packed message. Use
  *      protobuf_c_message_get_packed_size() to determine the number of bytes
  *      required.
